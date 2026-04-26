@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaBank | Banco Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <main class="container">
+    <section class="card login-card">
+      <div class="logo">N</div>
+      <h1>NovaBank</h1>
+      <p>Tu dinero, más inteligente.</p>
+
+      <div class="login-box">
+        <input type="text" placeholder="Usuario" id="usuario">
+        <input type="password" placeholder="Contraseña" id="password">
+        <button id="loginBtn">Ingresar</button>
+      </div>
+    </section>
+
+    <section class="dashboard hidden" id="dashboard">
+      <header class="topbar">
+        <div>
+          <h2 id="bienvenida">Hola</h2>
+          <span>Cuenta Digital Nova</span>
+        </div>
+        <div class="chip"></div>
+      </header>
+
+      <section class="saldo-card">
+        <p>Saldo disponible</p>
+        <h3 id="saldo">$0</h3>
+      </section>
+
+      <section class="acciones">
+        <input type="number" id="monto" placeholder="Ingresa un monto">
+        <div class="btns">
+          <button class="deposito" id="depositarBtn">Depositar</button>
+          <button class="retiro" id="retirarBtn">Retirar</button>
+        </div>
+      </section>
+
+      <section class="movimientos">
+        <h3>Historial de movimientos</h3>
+        <ul id="listaMovimientos"></ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
